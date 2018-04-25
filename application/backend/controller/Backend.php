@@ -95,6 +95,8 @@ class Backend extends Controller
                 $this->redirect('login/index');
             }
         }
+        // TODO 检测session UID在数据库中是否有效 防止中途更改 session无过期
+//        $UID = \app\backend\model\Admin::get(['id' => UID]);
     }
 
     /**
