@@ -2,104 +2,89 @@
 {block name="pjax_container"}
 {include file="form/list_crumb" /}
 <div class="row row_content">
-    <div class="col-lg-12">
-        <div class="ibox float-e-margins">
-            <div class="ibox-title">
-                <h5>All form elements
-                    <small>With custom checbox and radion elements.</small></h5>
-                <div class="ibox-tools">
-                    <a class="collapse-link">
-                        <i class="fa fa-chevron-up"></i>
-                    </a>
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-wrench"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-user">
-                        <li>
-                            <a href="#">Config option 1</a></li>
-                        <li>
-                            <a href="#">Config option 2</a></li>
-                    </ul>
-                    <a class="close-link">
-                        <i class="fa fa-times"></i>
-                    </a>
+    <form method="POST" action="" onsubmit="return false" class="form-horizontal">
+        <div class="col-lg-9">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>{:LQ($bread_crumb_title)}</h5>
+                    <div class="ibox-tools">
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">{:LQ('System Name')}</label>
+                            <div class="col-sm-8">
+                                <input type="text" name="username" class="form-control"></div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">{:LQ('Name')}</label>
+                            <div class="col-sm-8">
+                                <input type="text" name="name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">{:LQ('Password')}</label>
+                            <div class="col-sm-8">
+                                <input type="password" class="form-control" name="password"></div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">{:LQ('Email')}</label>
+                            <div class="col-sm-8">
+                                <input type="email" name="email" class="form-control"></div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">{:LQ('Phone')}</label>
+                            <div class="col-lg-8">
+                                <input type="text" name="moblie" class="form-control"></div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <div class="col-sm-4 col-sm-offset-2">
+                                <button class="btn btn-white" type="submit">{:LQ('Cancel')}</button>
+                                <button class="btn btn-primary submission" type="submit">{:LQ('Save changes')}</button></div>
+                        </div>
                 </div>
             </div>
-            <div class="ibox-content">
-                <form method="get" class="form-horizontal">
+        </div>
+        <div class="col-lg-3">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Custom switch</h5>
+                    <div class="ibox-tools">
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
                     <div class="form-group">
-                        <label class="col-sm-2 control-label">Normal</label>
+                        <label class="col-sm-2 control-label">{:LQ('Sex')}</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control"></div>
-                    </div>
-                    <div class="hr-line-dashed"></div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Help text</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control">
-                            <span class="help-block m-b-none">A block of help text that breaks onto a new line and may extend beyond one line.</span></div>
-                    </div>
-                    <div class="hr-line-dashed"></div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Password</label>
-                        <div class="col-sm-10">
-                            <input type="password" class="form-control" name="password"></div>
-                    </div>
-                    <div class="hr-line-dashed"></div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Placeholder</label>
-                        <div class="col-sm-10">
-                            <input type="text" placeholder="placeholder" class="form-control"></div>
-                    </div>
-                    <div class="hr-line-dashed"></div>
-                    <div class="form-group">
-                        <label class="col-lg-2 control-label">Disabled</label>
-                        <div class="col-lg-10">
-                            <input type="text" disabled="" placeholder="Disabled input here..." class="form-control"></div>
-                    </div>
-                    <div class="hr-line-dashed"></div>
-                    <div class="form-group">
-                        <label class="col-lg-2 control-label">Static control</label>
-                        <div class="col-lg-10">
-                            <p class="form-control-static">email@example.com</p></div>
-                    </div>
-                    <div class="hr-line-dashed"></div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label">Checkboxes and radios
-                            <br/>
-                            <small class="text-navy">Normal Bootstrap elements</small></label>
-                        <div class="col-sm-10">
-                            <div>
-                                <label>
-                                    <input type="checkbox" value="">Option one is this and that&mdash;be sure to include why it's great</label></div>
-                            <div>
-                                <label>
-                                    <input type="radio" checked="" value="option1" id="optionsRadios1" name="optionsRadios">Option one is this and that&mdash;be sure to include why it's great</label></div>
-                            <div>
-                                <label>
-                                    <input type="radio" value="option2" id="optionsRadios2" name="optionsRadios">Option two can be something else and selecting it will deselect option one</label></div>
+                            <select class="form-control m-b" name="sex">
+                                <option>{:LQ('Boy')}</option>
+                                <option>{:LQ('Girl')}</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="hr-line-dashed"></div>
                     <div class="form-group">
-                        <label class="col-sm-2 control-label">Inline checkboxes</label>
+                        <label class="col-sm-2 control-label">{:LQ('Status')}</label>
                         <div class="col-sm-10">
-                            <label class="checkbox-inline">
-                                <input type="checkbox" value="option1" id="inlineCheckbox1">a</label>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" value="option2" id="inlineCheckbox2">b</label>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" value="option3" id="inlineCheckbox3">c</label></div>
+                            <select class="form-control m-b" name="sex">
+                                <option>{:LQ('Normal')}</option>
+                                <option>{:LQ('Disable')}</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="hr-line-dashed"></div>
-                    <div class="form-group">
-                        <div class="col-sm-4 col-sm-offset-2">
-                            <button class="btn btn-white" type="submit">Cancel</button>
-                            <button class="btn btn-primary" type="submit">Save changes</button></div>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
-    </div>
+    </form>
 </div>
 {/block}

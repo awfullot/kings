@@ -18,7 +18,7 @@ $(function(){
 
         if(form.length){
 
-            var ajax_option={
+            var transmit={
 
                 dataType:'json',
 
@@ -44,7 +44,7 @@ $(function(){
 
             }
 
-            form.ajaxSubmit(ajax_option);
+            form.ajaxSubmit(transmit);
 
         }
 

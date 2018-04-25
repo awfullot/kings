@@ -8,6 +8,7 @@ return [
         '__FONTS__'  => '/static/backend/fonts',
         '__IMG__' => '/static/backend/img',
         '__AWESOME__' => '/static/backend/font-awesome',
+        '__AVATAR__' => '/static/backend/img/avatar',
     ),
     // Pjax返回格式
     'default_ajax_return'    => 'html',
