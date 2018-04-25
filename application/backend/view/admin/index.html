@@ -16,7 +16,7 @@
                     <table class="table">
                         <thead>
                         <tr>
-                            <th></th>
+                            <th>{:LQ('ID')}</th>
                             <th>{:LQ('Avatar')}</th>
                             <th>{:LQ('System Img')}</th>
                             <th>{:LQ('Name')}</th>
@@ -30,8 +30,9 @@
                         <tbody>
                         {volist name="dataList" id="v"}
                         <tr>
-                            <td style="vertical-align:middle">
-                                <input type="checkbox" class="i-checks" name="input[]" value="{$v.id}"></td>
+                            <!--<td style="vertical-align:middle">-->
+                                <!--<input type="checkbox" class="i-checks" name="input[]" value="{$v.id}"></td>-->
+                            <td style="vertical-align:middle">{$v.id}</td>
                             <td style="vertical-align:middle"><img src="{$v.avatar}" onerror="this.src='/static/backend/img/avatar/default.png'" class="img-circle" style="width: 38px; height: 38px;"></td>
                             <td style="vertical-align:middle">{$v.username}</td>
                             <td style="vertical-align:middle">{$v.name}</td>

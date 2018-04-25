@@ -41,12 +41,12 @@ class Backend extends Controller
         ]);
 
         //是否开启浏览模式
-       // $isbrowse = 1;
-       // if ($isbrowse){
-       //     if (input('post.')){
-       //         return LQPjax(LQ('Browse mode'));
-       //     }
-       // }
+        $isbrowse = 1;
+        if ($isbrowse){
+            if (input('post.')){
+                return LQPjax(LQ('Browse mode'));
+            }
+        }
         // 权限设置
         $auth = new \expand\Auth();
         if (!$auth->check(CONTROLLER_NAME.'/'.ACTION_NAME, UID)){
@@ -95,8 +95,6 @@ class Backend extends Controller
                 $this->redirect('login/index');
             }
         }
-        // TODO 检测session UID在数据库中是否有效 防止中途更改 session无过期
-//        $UID = \app\backend\model\Admin::get(['id' => UID]);
     }
 
     /**
