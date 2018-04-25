@@ -96,7 +96,7 @@ class Admin extends Backend
                 }
             } catch (\Exception $e) {
                 Db::rollback();
-                return ajaxReturn($e->getMessage());
+                return LQPjax($e->getMessage());
             }
         }else{
             return $this->fetch('edit');
@@ -109,9 +109,16 @@ class Admin extends Backend
 
     {
 
-        if (request()->isPost()) {
-
-
+        if (request()->isPost()){
+            $id = input('id');
+            if (isset($id) && !empty($id)){
+                $result = $this->AM->where('id', $id)->delete();
+                if ($result){
+                    return LQPjax(LQ('Success'), url('index'));
+                }else{
+                    return LQPjax($this->AM->getError());
+                }
+            }
         }
 
     }

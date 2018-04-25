@@ -20,7 +20,7 @@ return [
     'paginate'               => [
         'type'      => 'bootstrap',
         'var_page'  => 'page',
-        'list_rows' => 12,
+        'list_rows' => 9,
     ],
     // 权限不够跳转403
     'dispatch_error_tmpl'    => APP_PATH . 'backend/view/403.html',

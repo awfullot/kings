@@ -7434,3 +7434,1902 @@ G ] INIT File
 [ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` IN (1,50,57,58,59,60,61,62,63,64,51,52,53,54,2,3,29,30,31,56,4,32,33,34,55,5,11,12,13,6,14,27,28,70,94,95,96,97,71,72,73,39,40,41,42,43,46,44,45,47,65,105,106,107,108,109,110,111,112,113,48,49,92,93,80,81,82,83,84,85,86,87,88,89,90,91,98,99,100,101,102,103,104,114,115,116)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000661s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `tf_admin` [ RunTime:0.011896s ]
 [ sql ] [ SQL ] UPDATE `tf_admin`  SET `status`=0  WHERE  `id` = 2 [ RunTime:0.001643s ]
+---------------------------------------------------------------
+[ 2018-04-25T19:27:14+08:00 ] 127.0.0.1 GET /backend/admin/index?search=%E8%8B%8F%E6%99%93%E4%BF%A1&_pjax=%23pjax-container
+[ info ] lq.com/backend/admin/index?search=%E8%8B%8F%E6%99%93%E4%BF%A1&_pjax=%23pjax-container [运行时间：0.091433s][吞吐率：10.94req/s] [内存消耗：2,246.86kb] [文件加载：57]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'x-requested-with' => 'XMLHttpRequest',
+  'x-pjax-container' => '#pjax-container',
+  'x-pjax' => 'true',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://lq.com/backend/admin/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+  '/backend/admin/index' => '',
+  'search' => '苏晓信',
+  '_pjax' => '#pjax-container',
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\backend\behavior\Common @module_init [ RunTime:0.000338s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend/lang/zh-cn/admin.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Admin->index[ E:\phpStudy\PHPTutorial\WWW\kings\application\backend\controller\Admin.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\view\admin\index.html [ array (
+  0 => 'is_pjax',
+  1 => 'treeMenu',
+  2 => 'language',
+  3 => 'title',
+  4 => 'bread_crumb',
+  5 => 'bread_crumb_title',
+  6 => 'dataList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001949s ] mysql:host=127.0.0.1;dbname=thins;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_rule` [ RunTime:0.019527s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tf_auth_rule` WHERE  `name` = 'Admin/index' LIMIT 1 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000750s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `ismenu` = 1  AND `module` = 'backend'  AND `status` = 1 ORDER BY `sorts` ASC,`id` ASC [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_group_access` [ RunTime:0.011935s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_group_access` `a` INNER JOIN `tf_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` IN (1,50,57,58,59,60,61,62,63,64,51,52,53,54,2,3,29,30,31,56,4,32,33,34,55,5,11,12,13,6,14,27,28,70,94,95,96,97,71,72,73,39,40,41,42,43,46,44,45,47,65,105,106,107,108,109,110,111,112,113,48,49,92,93,80,81,82,83,84,85,86,87,88,89,90,91,98,99,100,101,102,103,104,114,115,116)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000961s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_admin` [ RunTime:0.010690s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tf_admin` WHERE  `name` LIKE '%苏晓信%' LIMIT 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_admin` WHERE  `name` LIKE '%苏晓信%' LIMIT 0,12 [ RunTime:0.000320s ]
+---------------------------------------------------------------
+[ 2018-04-25T19:27:16+08:00 ] 127.0.0.1 GET /backend/admin/index.html?_pjax=%23pjax-container
+[ info ] lq.com/backend/admin/index.html?_pjax=%23pjax-container [运行时间：0.096917s][吞吐率：10.32req/s] [内存消耗：2,320.33kb] [文件加载：57]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'x-requested-with' => 'XMLHttpRequest',
+  'x-pjax-container' => '#pjax-container',
+  'x-pjax' => 'true',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://lq.com/backend/admin/index?search=%E8%8B%8F%E6%99%93%E4%BF%A1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+  '/backend/admin/index_html' => '',
+  '_pjax' => '#pjax-container',
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\backend\behavior\Common @module_init [ RunTime:0.000271s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend/lang/zh-cn/admin.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Admin->index[ E:\phpStudy\PHPTutorial\WWW\kings\application\backend\controller\Admin.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\view\admin\index.html [ array (
+  0 => 'is_pjax',
+  1 => 'treeMenu',
+  2 => 'language',
+  3 => 'title',
+  4 => 'bread_crumb',
+  5 => 'bread_crumb_title',
+  6 => 'dataList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000821s ] mysql:host=127.0.0.1;dbname=thins;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_rule` [ RunTime:0.019180s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tf_auth_rule` WHERE  `name` = 'Admin/index' LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `ismenu` = 1  AND `module` = 'backend'  AND `status` = 1 ORDER BY `sorts` ASC,`id` ASC [ RunTime:0.000746s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_group_access` [ RunTime:0.011526s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_group_access` `a` INNER JOIN `tf_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` IN (1,50,57,58,59,60,61,62,63,64,51,52,53,54,2,3,29,30,31,56,4,32,33,34,55,5,11,12,13,6,14,27,28,70,94,95,96,97,71,72,73,39,40,41,42,43,46,44,45,47,65,105,106,107,108,109,110,111,112,113,48,49,92,93,80,81,82,83,84,85,86,87,88,89,90,91,98,99,100,101,102,103,104,114,115,116)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_admin` [ RunTime:0.016269s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tf_admin` LIMIT 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_admin` LIMIT 0,12 [ RunTime:0.000331s ]
+---------------------------------------------------------------
+[ 2018-04-25T19:27:22+08:00 ] 127.0.0.1 GET /backend/admin/index?search=123&_pjax=%23pjax-container
+[ info ] lq.com/backend/admin/index?search=123&_pjax=%23pjax-container [运行时间：0.079028s][吞吐率：12.65req/s] [内存消耗：2,246.62kb] [文件加载：57]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'x-requested-with' => 'XMLHttpRequest',
+  'x-pjax-container' => '#pjax-container',
+  'x-pjax' => 'true',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://lq.com/backend/admin/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+  '/backend/admin/index' => '',
+  'search' => '123',
+  '_pjax' => '#pjax-container',
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\backend\behavior\Common @module_init [ RunTime:0.000265s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend/lang/zh-cn/admin.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Admin->index[ E:\phpStudy\PHPTutorial\WWW\kings\application\backend\controller\Admin.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\view\admin\index.html [ array (
+  0 => 'is_pjax',
+  1 => 'treeMenu',
+  2 => 'language',
+  3 => 'title',
+  4 => 'bread_crumb',
+  5 => 'bread_crumb_title',
+  6 => 'dataList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001077s ] mysql:host=127.0.0.1;dbname=thins;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_rule` [ RunTime:0.012849s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tf_auth_rule` WHERE  `name` = 'Admin/index' LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `ismenu` = 1  AND `module` = 'backend'  AND `status` = 1 ORDER BY `sorts` ASC,`id` ASC [ RunTime:0.000578s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_group_access` [ RunTime:0.010801s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_group_access` `a` INNER JOIN `tf_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` IN (1,50,57,58,59,60,61,62,63,64,51,52,53,54,2,3,29,30,31,56,4,32,33,34,55,5,11,12,13,6,14,27,28,70,94,95,96,97,71,72,73,39,40,41,42,43,46,44,45,47,65,105,106,107,108,109,110,111,112,113,48,49,92,93,80,81,82,83,84,85,86,87,88,89,90,91,98,99,100,101,102,103,104,114,115,116)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000856s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_admin` [ RunTime:0.012478s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tf_admin` WHERE  `name` LIKE '%123%' LIMIT 1 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_admin` WHERE  `name` LIKE '%123%' LIMIT 0,12 [ RunTime:0.000447s ]
+---------------------------------------------------------------
+[ 2018-04-25T19:27:28+08:00 ] 127.0.0.1 POST /backend/admin/edit/id/28.html
+[ info ] lq.com/backend/admin/edit/id/28.html [运行时间：0.096731s][吞吐率：10.34req/s] [内存消耗：2,192.02kb] [文件加载：55]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'admin',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'content-length' => '14',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://lq.com/backend/admin/index?search=123',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+  '/backend/admin/edit/id/28_html' => '',
+  'id' => '28',
+  'status' => '1',
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\backend\behavior\Common @module_init [ RunTime:0.000266s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend/lang/zh-cn/admin.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Admin->edit[ E:\phpStudy\PHPTutorial\WWW\kings\application\backend\controller\Admin.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011493s ] mysql:host=127.0.0.1;dbname=thins;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_rule` [ RunTime:0.018525s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tf_auth_rule` WHERE  `name` = 'Admin/edit' LIMIT 1 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 115 LIMIT 1 [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `ismenu` = 1  AND `module` = 'backend'  AND `status` = 1 ORDER BY `sorts` ASC,`id` ASC [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_group_access` [ RunTime:0.012943s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_group_access` `a` INNER JOIN `tf_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` IN (1,50,57,58,59,60,61,62,63,64,51,52,53,54,2,3,29,30,31,56,4,32,33,34,55,5,11,12,13,6,14,27,28,70,94,95,96,97,71,72,73,39,40,41,42,43,46,44,45,47,65,105,106,107,108,109,110,111,112,113,48,49,92,93,80,81,82,83,84,85,86,87,88,89,90,91,98,99,100,101,102,103,104,114,115,116)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000681s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_admin` [ RunTime:0.014057s ]
+[ sql ] [ SQL ] UPDATE `tf_admin`  SET `status`=1  WHERE  `id` = 28 [ RunTime:0.002602s ]
+---------------------------------------------------------------
+[ 2018-04-25T19:27:30+08:00 ] 127.0.0.1 GET /backend/admin/edit/id/28.html?_pjax=%23pjax-container
+[ info ] lq.com/backend/admin/edit/id/28.html?_pjax=%23pjax-container [运行时间：0.077900s][吞吐率：12.84req/s] [内存消耗：2,153.28kb] [文件加载：53]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'admin',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'x-requested-with' => 'XMLHttpRequest',
+  'x-pjax-container' => '#pjax-container',
+  'x-pjax' => 'true',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://lq.com/backend/admin/index?search=123',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+  '/backend/admin/edit/id/28_html' => '',
+  '_pjax' => '#pjax-container',
+  'id' => '28',
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\backend\behavior\Common @module_init [ RunTime:0.000262s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend/lang/zh-cn/admin.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Admin->edit[ E:\phpStudy\PHPTutorial\WWW\kings\application\backend\controller\Admin.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\view\admin\edit.html [ array (
+  0 => 'is_pjax',
+  1 => 'treeMenu',
+  2 => 'language',
+  3 => 'title',
+  4 => 'bread_crumb',
+  5 => 'bread_crumb_title',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010057s ] mysql:host=127.0.0.1;dbname=thins;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_rule` [ RunTime:0.016039s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tf_auth_rule` WHERE  `name` = 'Admin/edit' LIMIT 1 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 115 LIMIT 1 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `ismenu` = 1  AND `module` = 'backend'  AND `status` = 1 ORDER BY `sorts` ASC,`id` ASC [ RunTime:0.000829s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_group_access` [ RunTime:0.012685s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_group_access` `a` INNER JOIN `tf_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` IN (1,50,57,58,59,60,61,62,63,64,51,52,53,54,2,3,29,30,31,56,4,32,33,34,55,5,11,12,13,6,14,27,28,70,94,95,96,97,71,72,73,39,40,41,42,43,46,44,45,47,65,105,106,107,108,109,110,111,112,113,48,49,92,93,80,81,82,83,84,85,86,87,88,89,90,91,98,99,100,101,102,103,104,114,115,116)  AND `type` = 1  AND `status` = 1 [ RunTime:0.001236s ]
+---------------------------------------------------------------
+[ 2018-04-25T19:30:10+08:00 ] 127.0.0.1 GET /backend/admin/index.html?_pjax=%23pjax-container
+[ info ] lq.com/backend/admin/index.html?_pjax=%23pjax-container [运行时间：0.100599s][吞吐率：9.94req/s] [内存消耗：2,321.93kb] [文件加载：57]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'x-requested-with' => 'XMLHttpRequest',
+  'x-pjax-container' => '#pjax-container',
+  'x-pjax' => 'true',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://lq.com/backend/admin/edit/id/28.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+  '/backend/admin/index_html' => '',
+  '_pjax' => '#pjax-container',
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\backend\behavior\Common @module_init [ RunTime:0.000441s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend/lang/zh-cn/admin.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Admin->index[ E:\phpStudy\PHPTutorial\WWW\kings\application\backend\controller\Admin.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\view\admin\index.html [ array (
+  0 => 'is_pjax',
+  1 => 'treeMenu',
+  2 => 'language',
+  3 => 'title',
+  4 => 'bread_crumb',
+  5 => 'bread_crumb_title',
+  6 => 'dataList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009779s ] mysql:host=127.0.0.1;dbname=thins;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_rule` [ RunTime:0.018565s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tf_auth_rule` WHERE  `name` = 'Admin/index' LIMIT 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `ismenu` = 1  AND `module` = 'backend'  AND `status` = 1 ORDER BY `sorts` ASC,`id` ASC [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_group_access` [ RunTime:0.011743s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_group_access` `a` INNER JOIN `tf_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` IN (1,50,57,58,59,60,61,62,63,64,51,52,53,54,2,3,29,30,31,56,4,32,33,34,55,5,11,12,13,6,14,27,28,70,94,95,96,97,71,72,73,39,40,41,42,43,46,44,45,47,65,105,106,107,108,109,110,111,112,113,48,49,92,93,80,81,82,83,84,85,86,87,88,89,90,91,98,99,100,101,102,103,104,114,115,116)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000799s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_admin` [ RunTime:0.011516s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tf_admin` LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_admin` LIMIT 0,12 [ RunTime:0.000439s ]
+---------------------------------------------------------------
+[ 2018-04-25T19:30:17+08:00 ] 127.0.0.1 POST /backend/admin/edit/id/2.html
+[ info ] lq.com/backend/admin/edit/id/2.html [运行时间：0.091515s][吞吐率：10.93req/s] [内存消耗：2,193.85kb] [文件加载：55]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'admin',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'content-length' => '13',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://lq.com/backend/admin/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+  '/backend/admin/edit/id/2_html' => '',
+  'id' => '2',
+  'status' => '1',
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\backend\behavior\Common @module_init [ RunTime:0.000263s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend/lang/zh-cn/admin.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Admin->edit[ E:\phpStudy\PHPTutorial\WWW\kings\application\backend\controller\Admin.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009878s ] mysql:host=127.0.0.1;dbname=thins;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_rule` [ RunTime:0.018487s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tf_auth_rule` WHERE  `name` = 'Admin/edit' LIMIT 1 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 115 LIMIT 1 [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `ismenu` = 1  AND `module` = 'backend'  AND `status` = 1 ORDER BY `sorts` ASC,`id` ASC [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_group_access` [ RunTime:0.011843s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_group_access` `a` INNER JOIN `tf_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000835s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` IN (1,50,57,58,59,60,61,62,63,64,51,52,53,54,2,3,29,30,31,56,4,32,33,34,55,5,11,12,13,6,14,27,28,70,94,95,96,97,71,72,73,39,40,41,42,43,46,44,45,47,65,105,106,107,108,109,110,111,112,113,48,49,92,93,80,81,82,83,84,85,86,87,88,89,90,91,98,99,100,101,102,103,104,114,115,116)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000750s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_admin` [ RunTime:0.011712s ]
+[ sql ] [ SQL ] UPDATE `tf_admin`  SET `status`=1  WHERE  `id` = 2 [ RunTime:0.001836s ]
+---------------------------------------------------------------
+[ 2018-04-25T19:33:39+08:00 ] 127.0.0.1 GET /backend/admin/index.html
+[ info ] lq.com/backend/admin/index.html [运行时间：0.103420s][吞吐率：9.67req/s] [内存消耗：2,315.71kb] [文件加载：57]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+  '/backend/admin/index_html' => '',
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\backend\behavior\Common @module_init [ RunTime:0.000703s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend/lang/zh-cn/admin.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Admin->index[ E:\phpStudy\PHPTutorial\WWW\kings\application\backend\controller\Admin.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\view\admin\index.html [ array (
+  0 => 'is_pjax',
+  1 => 'treeMenu',
+  2 => 'language',
+  3 => 'title',
+  4 => 'bread_crumb',
+  5 => 'bread_crumb_title',
+  6 => 'dataList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001262s ] mysql:host=127.0.0.1;dbname=thins;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_rule` [ RunTime:0.020042s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tf_auth_rule` WHERE  `name` = 'Admin/index' LIMIT 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `ismenu` = 1  AND `module` = 'backend'  AND `status` = 1 ORDER BY `sorts` ASC,`id` ASC [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_group_access` [ RunTime:0.011652s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_group_access` `a` INNER JOIN `tf_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` IN (1,50,57,58,59,60,61,62,63,64,51,52,53,54,2,3,29,30,31,56,4,32,33,34,55,5,11,12,13,6,14,27,28,70,94,95,96,97,71,72,73,39,40,41,42,43,46,44,45,47,65,105,106,107,108,109,110,111,112,113,48,49,92,93,80,81,82,83,84,85,86,87,88,89,90,91,98,99,100,101,102,103,104,114,115,116)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_admin` [ RunTime:0.011347s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tf_admin` LIMIT 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_admin` LIMIT 0,10 [ RunTime:0.000471s ]
+---------------------------------------------------------------
+[ 2018-04-25T19:33:39+08:00 ] 127.0.0.1 GET /static/backend/img/profile_small.jpg
+[ info ] lq.com/static/backend/img/profile_small.jpg [运行时间：0.014502s][吞吐率：68.96req/s] [内存消耗：834.09kb] [文件加载：28]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'backend',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'referer' => 'http://lq.com/backend/admin/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/backend/img/profile_small_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-25T19:33:40+08:00 ] 127.0.0.1 GET /static/backend/img/a7.jpg
+[ info ] lq.com/static/backend/img/a7.jpg [运行时间：0.035099s][吞吐率：28.49req/s] [内存消耗：834.00kb] [文件加载：28]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'backend',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'referer' => 'http://lq.com/backend/admin/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/backend/img/a7_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-25T19:33:42+08:00 ] 127.0.0.1 GET /static/backend/img/a4.jpg
+[ info ] lq.com/static/backend/img/a4.jpg [运行时间：0.027643s][吞吐率：36.18req/s] [内存消耗：833.98kb] [文件加载：28]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'backend',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'referer' => 'http://lq.com/backend/admin/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/backend/img/a4_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-25T19:33:42+08:00 ] 127.0.0.1 GET /static/backend/img/profile.jpg
+[ info ] lq.com/static/backend/img/profile.jpg [运行时间：0.022759s][吞吐率：43.94req/s] [内存消耗：833.98kb] [文件加载：28]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'backend',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'referer' => 'http://lq.com/backend/admin/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/backend/img/profile_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-25T19:33:48+08:00 ] 127.0.0.1 GET /backend/admin/index.html
+[ info ] lq.com/backend/admin/index.html [运行时间：0.084942s][吞吐率：11.77req/s] [内存消耗：2,313.00kb] [文件加载：57]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+  '/backend/admin/index_html' => '',
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\backend\behavior\Common @module_init [ RunTime:0.000254s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend/lang/zh-cn/admin.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Admin->index[ E:\phpStudy\PHPTutorial\WWW\kings\application\backend\controller\Admin.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\view\admin\index.html [ array (
+  0 => 'is_pjax',
+  1 => 'treeMenu',
+  2 => 'language',
+  3 => 'title',
+  4 => 'bread_crumb',
+  5 => 'bread_crumb_title',
+  6 => 'dataList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010558s ] mysql:host=127.0.0.1;dbname=thins;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_rule` [ RunTime:0.011793s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tf_auth_rule` WHERE  `name` = 'Admin/index' LIMIT 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `ismenu` = 1  AND `module` = 'backend'  AND `status` = 1 ORDER BY `sorts` ASC,`id` ASC [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_group_access` [ RunTime:0.011072s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_group_access` `a` INNER JOIN `tf_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` IN (1,50,57,58,59,60,61,62,63,64,51,52,53,54,2,3,29,30,31,56,4,32,33,34,55,5,11,12,13,6,14,27,28,70,94,95,96,97,71,72,73,39,40,41,42,43,46,44,45,47,65,105,106,107,108,109,110,111,112,113,48,49,92,93,80,81,82,83,84,85,86,87,88,89,90,91,98,99,100,101,102,103,104,114,115,116)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_admin` [ RunTime:0.010911s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tf_admin` LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_admin` LIMIT 0,9 [ RunTime:0.000286s ]
+---------------------------------------------------------------
+[ 2018-04-25T19:33:48+08:00 ] 127.0.0.1 GET /static/backend/img/a7.jpg
+[ info ] lq.com/static/backend/img/a7.jpg [运行时间：0.014496s][吞吐率：68.99req/s] [内存消耗：834.00kb] [文件加载：28]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'backend',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'referer' => 'http://lq.com/backend/admin/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/backend/img/a7_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-25T19:33:48+08:00 ] 127.0.0.1 GET /static/backend/img/profile_small.jpg
+[ info ] lq.com/static/backend/img/profile_small.jpg [运行时间：0.016356s][吞吐率：61.14req/s] [内存消耗：834.09kb] [文件加载：28]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'backend',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'referer' => 'http://lq.com/backend/admin/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/backend/img/profile_small_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-25T19:33:48+08:00 ] 127.0.0.1 GET /static/backend/img/profile.jpg
+[ info ] lq.com/static/backend/img/profile.jpg [运行时间：0.013821s][吞吐率：72.35req/s] [内存消耗：834.00kb] [文件加载：28]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'backend',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'referer' => 'http://lq.com/backend/admin/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/backend/img/profile_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-25T19:33:49+08:00 ] 127.0.0.1 GET /static/backend/img/a4.jpg
+[ info ] lq.com/static/backend/img/a4.jpg [运行时间：0.017194s][吞吐率：58.16req/s] [内存消耗：834.00kb] [文件加载：28]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'backend',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'referer' => 'http://lq.com/backend/admin/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/backend/img/a4_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-25T19:34:00+08:00 ] 127.0.0.1 GET /backend/admin/index.html?%2Fbackend%2Fadmin%2Findex_html=&page=2&_pjax=%23pjax-container
+[ info ] lq.com/backend/admin/index.html?%2Fbackend%2Fadmin%2Findex_html=&page=2&_pjax=%23pjax-container [运行时间：0.104801s][吞吐率：9.54req/s] [内存消耗：2,314.09kb] [文件加载：57]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'x-requested-with' => 'XMLHttpRequest',
+  'x-pjax-container' => '#pjax-container',
+  'x-pjax' => 'true',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://lq.com/backend/admin/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+  '/backend/admin/index_html' => '',
+  'page' => '2',
+  '_pjax' => '#pjax-container',
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\backend\behavior\Common @module_init [ RunTime:0.000438s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend/lang/zh-cn/admin.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Admin->index[ E:\phpStudy\PHPTutorial\WWW\kings\application\backend\controller\Admin.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\view\admin\index.html [ array (
+  0 => 'is_pjax',
+  1 => 'treeMenu',
+  2 => 'language',
+  3 => 'title',
+  4 => 'bread_crumb',
+  5 => 'bread_crumb_title',
+  6 => 'dataList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011319s ] mysql:host=127.0.0.1;dbname=thins;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_rule` [ RunTime:0.020653s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tf_auth_rule` WHERE  `name` = 'Admin/index' LIMIT 1 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `ismenu` = 1  AND `module` = 'backend'  AND `status` = 1 ORDER BY `sorts` ASC,`id` ASC [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_group_access` [ RunTime:0.011561s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_group_access` `a` INNER JOIN `tf_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` IN (1,50,57,58,59,60,61,62,63,64,51,52,53,54,2,3,29,30,31,56,4,32,33,34,55,5,11,12,13,6,14,27,28,70,94,95,96,97,71,72,73,39,40,41,42,43,46,44,45,47,65,105,106,107,108,109,110,111,112,113,48,49,92,93,80,81,82,83,84,85,86,87,88,89,90,91,98,99,100,101,102,103,104,114,115,116)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000803s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_admin` [ RunTime:0.012983s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tf_admin` LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_admin` LIMIT 9,9 [ RunTime:0.000315s ]
+---------------------------------------------------------------
+[ 2018-04-25T19:34:00+08:00 ] 127.0.0.1 GET /backend/admin/index.html?%2Fbackend%2Fadmin%2Findex_html=&page=3&_pjax=%23pjax-container
+[ info ] lq.com/backend/admin/index.html?%2Fbackend%2Fadmin%2Findex_html=&page=3&_pjax=%23pjax-container [运行时间：0.095736s][吞吐率：10.45req/s] [内存消耗：2,314.41kb] [文件加载：57]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'x-requested-with' => 'XMLHttpRequest',
+  'x-pjax-container' => '#pjax-container',
+  'x-pjax' => 'true',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://lq.com/backend/admin/index.html?%2Fbackend%2Fadmin%2Findex_html=&page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+  '/backend/admin/index_html' => '',
+  'page' => '3',
+  '_pjax' => '#pjax-container',
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\backend\behavior\Common @module_init [ RunTime:0.000268s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend/lang/zh-cn/admin.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Admin->index[ E:\phpStudy\PHPTutorial\WWW\kings\application\backend\controller\Admin.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\view\admin\index.html [ array (
+  0 => 'is_pjax',
+  1 => 'treeMenu',
+  2 => 'language',
+  3 => 'title',
+  4 => 'bread_crumb',
+  5 => 'bread_crumb_title',
+  6 => 'dataList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010431s ] mysql:host=127.0.0.1;dbname=thins;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_rule` [ RunTime:0.018333s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tf_auth_rule` WHERE  `name` = 'Admin/index' LIMIT 1 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `ismenu` = 1  AND `module` = 'backend'  AND `status` = 1 ORDER BY `sorts` ASC,`id` ASC [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_group_access` [ RunTime:0.010919s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_group_access` `a` INNER JOIN `tf_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` IN (1,50,57,58,59,60,61,62,63,64,51,52,53,54,2,3,29,30,31,56,4,32,33,34,55,5,11,12,13,6,14,27,28,70,94,95,96,97,71,72,73,39,40,41,42,43,46,44,45,47,65,105,106,107,108,109,110,111,112,113,48,49,92,93,80,81,82,83,84,85,86,87,88,89,90,91,98,99,100,101,102,103,104,114,115,116)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000905s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_admin` [ RunTime:0.011067s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tf_admin` LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_admin` LIMIT 18,9 [ RunTime:0.000396s ]
+---------------------------------------------------------------
+[ 2018-04-25T19:34:01+08:00 ] 127.0.0.1 GET /backend/admin/index.html?%2Fbackend%2Fadmin%2Findex_html=&page=4&_pjax=%23pjax-container
+[ info ] lq.com/backend/admin/index.html?%2Fbackend%2Fadmin%2Findex_html=&page=4&_pjax=%23pjax-container [运行时间：0.093847s][吞吐率：10.66req/s] [内存消耗：2,281.92kb] [文件加载：57]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'x-requested-with' => 'XMLHttpRequest',
+  'x-pjax-container' => '#pjax-container',
+  'x-pjax' => 'true',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://lq.com/backend/admin/index.html?%2Fbackend%2Fadmin%2Findex_html=&page=3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+  '/backend/admin/index_html' => '',
+  'page' => '4',
+  '_pjax' => '#pjax-container',
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\backend\behavior\Common @module_init [ RunTime:0.000264s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend/lang/zh-cn/admin.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Admin->index[ E:\phpStudy\PHPTutorial\WWW\kings\application\backend\controller\Admin.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\view\admin\index.html [ array (
+  0 => 'is_pjax',
+  1 => 'treeMenu',
+  2 => 'language',
+  3 => 'title',
+  4 => 'bread_crumb',
+  5 => 'bread_crumb_title',
+  6 => 'dataList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010211s ] mysql:host=127.0.0.1;dbname=thins;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_rule` [ RunTime:0.018360s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tf_auth_rule` WHERE  `name` = 'Admin/index' LIMIT 1 [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `ismenu` = 1  AND `module` = 'backend'  AND `status` = 1 ORDER BY `sorts` ASC,`id` ASC [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_group_access` [ RunTime:0.011877s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_group_access` `a` INNER JOIN `tf_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` IN (1,50,57,58,59,60,61,62,63,64,51,52,53,54,2,3,29,30,31,56,4,32,33,34,55,5,11,12,13,6,14,27,28,70,94,95,96,97,71,72,73,39,40,41,42,43,46,44,45,47,65,105,106,107,108,109,110,111,112,113,48,49,92,93,80,81,82,83,84,85,86,87,88,89,90,91,98,99,100,101,102,103,104,114,115,116)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000966s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_admin` [ RunTime:0.011214s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tf_admin` LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_admin` LIMIT 27,9 [ RunTime:0.000414s ]
+---------------------------------------------------------------
+[ 2018-04-25T19:34:09+08:00 ] 127.0.0.1 GET /
+[ info ] lq.com/ [运行时间：0.070469s][吞吐率：14.19req/s] [内存消耗：2,178.67kb] [文件加载：53]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pjlln9k6jar5bl8oo4prn6pap1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\backend\behavior\Common @module_init [ RunTime:0.000328s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\kings\application\backend\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\view\index\index.html [ array (
+  0 => 'is_pjax',
+  1 => 'treeMenu',
+  2 => 'language',
+  3 => 'title',
+  4 => 'bread_crumb',
+  5 => 'bread_crumb_title',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000738s ] mysql:host=127.0.0.1;dbname=thins;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_rule` [ RunTime:0.019156s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tf_auth_rule` WHERE  `name` = 'Index/index' LIMIT 1 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `ismenu` = 1  AND `module` = 'backend'  AND `status` = 1 ORDER BY `sorts` ASC,`id` ASC [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_group_access` [ RunTime:0.011297s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_group_access` `a` INNER JOIN `tf_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` IN (1,50,57,58,59,60,61,62,63,64,51,52,53,54,2,3,29,30,31,56,4,32,33,34,55,5,11,12,13,6,14,27,28,70,94,95,96,97,71,72,73,39,40,41,42,43,46,44,45,47,65,105,106,107,108,109,110,111,112,113,48,49,92,93,80,81,82,83,84,85,86,87,88,89,90,91,98,99,100,101,102,103,104,114,115,116)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000884s ]
+[ error ] [0]模板文件不存在:[E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\library\think\Template.php:1074]
+---------------------------------------------------------------
+[ 2018-04-25T19:34:14+08:00 ] 127.0.0.1 GET /
+[ info ] www.lq.com/ [运行时间：0.064717s][吞吐率：15.45req/s] [内存消耗：2,178.50kb] [文件加载：53]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pjlln9k6jar5bl8oo4prn6pap1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'www.lq.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\backend\behavior\Common @module_init [ RunTime:0.000273s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\kings\application\backend\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\view\index\index.html [ array (
+  0 => 'is_pjax',
+  1 => 'treeMenu',
+  2 => 'language',
+  3 => 'title',
+  4 => 'bread_crumb',
+  5 => 'bread_crumb_title',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001021s ] mysql:host=127.0.0.1;dbname=thins;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_rule` [ RunTime:0.012558s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tf_auth_rule` WHERE  `name` = 'Index/index' LIMIT 1 [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `ismenu` = 1  AND `module` = 'backend'  AND `status` = 1 ORDER BY `sorts` ASC,`id` ASC [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_group_access` [ RunTime:0.011374s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_group_access` `a` INNER JOIN `tf_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000743s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` IN (1,50,57,58,59,60,61,62,63,64,51,52,53,54,2,3,29,30,31,56,4,32,33,34,55,5,11,12,13,6,14,27,28,70,94,95,96,97,71,72,73,39,40,41,42,43,46,44,45,47,65,105,106,107,108,109,110,111,112,113,48,49,92,93,80,81,82,83,84,85,86,87,88,89,90,91,98,99,100,101,102,103,104,114,115,116)  AND `type` = 1  AND `status` = 1 [ RunTime:0.001068s ]
+[ error ] [0]模板文件不存在:[E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\library\think\Template.php:1074]
+---------------------------------------------------------------
+[ 2018-04-25T19:34:16+08:00 ] 127.0.0.1 GET /
+[ info ] www.lq.com/ [运行时间：0.082881s][吞吐率：12.07req/s] [内存消耗：2,178.92kb] [文件加载：53]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pjlln9k6jar5bl8oo4prn6pap1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.lq.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\backend\behavior\Common @module_init [ RunTime:0.000578s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\kings\application\backend\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\view\index\index.html [ array (
+  0 => 'is_pjax',
+  1 => 'treeMenu',
+  2 => 'language',
+  3 => 'title',
+  4 => 'bread_crumb',
+  5 => 'bread_crumb_title',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010101s ] mysql:host=127.0.0.1;dbname=thins;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_rule` [ RunTime:0.012518s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tf_auth_rule` WHERE  `name` = 'Index/index' LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `ismenu` = 1  AND `module` = 'backend'  AND `status` = 1 ORDER BY `sorts` ASC,`id` ASC [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_group_access` [ RunTime:0.011356s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_group_access` `a` INNER JOIN `tf_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` IN (1,50,57,58,59,60,61,62,63,64,51,52,53,54,2,3,29,30,31,56,4,32,33,34,55,5,11,12,13,6,14,27,28,70,94,95,96,97,71,72,73,39,40,41,42,43,46,44,45,47,65,105,106,107,108,109,110,111,112,113,48,49,92,93,80,81,82,83,84,85,86,87,88,89,90,91,98,99,100,101,102,103,104,114,115,116)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000776s ]
+[ error ] [0]模板文件不存在:[E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\library\think\Template.php:1074]
+---------------------------------------------------------------
+[ 2018-04-25T19:34:17+08:00 ] 127.0.0.1 GET /
+[ info ] www.lq.com/ [运行时间：0.099981s][吞吐率：10.00req/s] [内存消耗：2,178.92kb] [文件加载：53]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pjlln9k6jar5bl8oo4prn6pap1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.lq.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\backend\behavior\Common @module_init [ RunTime:0.000432s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\kings\application\backend\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\view\index\index.html [ array (
+  0 => 'is_pjax',
+  1 => 'treeMenu',
+  2 => 'language',
+  3 => 'title',
+  4 => 'bread_crumb',
+  5 => 'bread_crumb_title',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010687s ] mysql:host=127.0.0.1;dbname=thins;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_rule` [ RunTime:0.011828s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tf_auth_rule` WHERE  `name` = 'Index/index' LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `ismenu` = 1  AND `module` = 'backend'  AND `status` = 1 ORDER BY `sorts` ASC,`id` ASC [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_group_access` [ RunTime:0.010665s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_group_access` `a` INNER JOIN `tf_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` IN (1,50,57,58,59,60,61,62,63,64,51,52,53,54,2,3,29,30,31,56,4,32,33,34,55,5,11,12,13,6,14,27,28,70,94,95,96,97,71,72,73,39,40,41,42,43,46,44,45,47,65,105,106,107,108,109,110,111,112,113,48,49,92,93,80,81,82,83,84,85,86,87,88,89,90,91,98,99,100,101,102,103,104,114,115,116)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000800s ]
+[ error ] [0]模板文件不存在:[E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\library\think\Template.php:1074]
+---------------------------------------------------------------
+[ 2018-04-25T19:34:17+08:00 ] 127.0.0.1 GET /
+[ info ] www.lq.com/ [运行时间：0.063147s][吞吐率：15.84req/s] [内存消耗：2,178.92kb] [文件加载：53]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=pjlln9k6jar5bl8oo4prn6pap1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.221 Safari/537.36 SE 2.X MetaSr 1.0',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.lq.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\backend\behavior\Common @module_init [ RunTime:0.000222s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\kings\application\backend\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\view\index\index.html [ array (
+  0 => 'is_pjax',
+  1 => 'treeMenu',
+  2 => 'language',
+  3 => 'title',
+  4 => 'bread_crumb',
+  5 => 'bread_crumb_title',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000917s ] mysql:host=127.0.0.1;dbname=thins;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_rule` [ RunTime:0.013113s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tf_auth_rule` WHERE  `name` = 'Index/index' LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `ismenu` = 1  AND `module` = 'backend'  AND `status` = 1 ORDER BY `sorts` ASC,`id` ASC [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_group_access` [ RunTime:0.011483s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_group_access` `a` INNER JOIN `tf_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` IN (1,50,57,58,59,60,61,62,63,64,51,52,53,54,2,3,29,30,31,56,4,32,33,34,55,5,11,12,13,6,14,27,28,70,94,95,96,97,71,72,73,39,40,41,42,43,46,44,45,47,65,105,106,107,108,109,110,111,112,113,48,49,92,93,80,81,82,83,84,85,86,87,88,89,90,91,98,99,100,101,102,103,104,114,115,116)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000868s ]
+[ error ] [0]模板文件不存在:[E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\library\think\Template.php:1074]
+---------------------------------------------------------------
+[ 2018-04-25T19:34:20+08:00 ] 127.0.0.1 GET /backend/admin/index.html?%2Fbackend%2Fadmin%2Findex_html=&page=4
+[ info ] lq.com/backend/admin/index.html?%2Fbackend%2Fadmin%2Findex_html=&page=4 [运行时间：0.093449s][吞吐率：10.70req/s] [内存消耗：2,296.52kb] [文件加载：57]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'backend',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+  '/backend/admin/index_html' => '',
+  'page' => '4',
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\backend\behavior\Common @module_init [ RunTime:0.000217s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend/lang/zh-cn/admin.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Admin->index[ E:\phpStudy\PHPTutorial\WWW\kings\application\backend\controller\Admin.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\view\admin\index.html [ array (
+  0 => 'is_pjax',
+  1 => 'treeMenu',
+  2 => 'language',
+  3 => 'title',
+  4 => 'bread_crumb',
+  5 => 'bread_crumb_title',
+  6 => 'dataList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010472s ] mysql:host=127.0.0.1;dbname=thins;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_rule` [ RunTime:0.019592s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tf_auth_rule` WHERE  `name` = 'Admin/index' LIMIT 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `ismenu` = 1  AND `module` = 'backend'  AND `status` = 1 ORDER BY `sorts` ASC,`id` ASC [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_group_access` [ RunTime:0.012020s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_group_access` `a` INNER JOIN `tf_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` IN (1,50,57,58,59,60,61,62,63,64,51,52,53,54,2,3,29,30,31,56,4,32,33,34,55,5,11,12,13,6,14,27,28,70,94,95,96,97,71,72,73,39,40,41,42,43,46,44,45,47,65,105,106,107,108,109,110,111,112,113,48,49,92,93,80,81,82,83,84,85,86,87,88,89,90,91,98,99,100,101,102,103,104,114,115,116)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_admin` [ RunTime:0.012067s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tf_admin` LIMIT 1 [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_admin` LIMIT 27,9 [ RunTime:0.000439s ]
+---------------------------------------------------------------
+[ 2018-04-25T19:34:20+08:00 ] 127.0.0.1 GET /static/backend/img/profile_small.jpg
+[ info ] lq.com/static/backend/img/profile_small.jpg [运行时间：0.014199s][吞吐率：70.43req/s] [内存消耗：834.25kb] [文件加载：28]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'backend',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'referer' => 'http://lq.com/backend/admin/index.html?%2Fbackend%2Fadmin%2Findex_html=&page=4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/backend/img/profile_small_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-25T19:34:20+08:00 ] 127.0.0.1 GET /static/backend/img/a7.jpg
+[ info ] lq.com/static/backend/img/a7.jpg [运行时间：0.015636s][吞吐率：63.96req/s] [内存消耗：834.24kb] [文件加载：28]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'backend',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'referer' => 'http://lq.com/backend/admin/index.html?%2Fbackend%2Fadmin%2Findex_html=&page=4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/backend/img/a7_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-25T19:34:21+08:00 ] 127.0.0.1 GET /static/backend/img/profile.jpg
+[ info ] lq.com/static/backend/img/profile.jpg [运行时间：0.028548s][吞吐率：35.03req/s] [内存消耗：834.20kb] [文件加载：28]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'backend',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'referer' => 'http://lq.com/backend/admin/index.html?%2Fbackend%2Fadmin%2Findex_html=&page=4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/backend/img/profile_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-25T19:34:21+08:00 ] 127.0.0.1 GET /static/backend/img/a4.jpg
+[ info ] lq.com/static/backend/img/a4.jpg [运行时间：0.029197s][吞吐率：34.25req/s] [内存消耗：834.24kb] [文件加载：28]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'backend',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'referer' => 'http://lq.com/backend/admin/index.html?%2Fbackend%2Fadmin%2Findex_html=&page=4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/backend/img/a4_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-25T19:34:22+08:00 ] 127.0.0.1 GET /
+[ info ] lq.com/ [运行时间：0.076853s][吞吐率：13.01req/s] [内存消耗：2,178.64kb] [文件加载：53]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\backend\behavior\Common @module_init [ RunTime:0.000273s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\kings\application\backend\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\view\index\index.html [ array (
+  0 => 'is_pjax',
+  1 => 'treeMenu',
+  2 => 'language',
+  3 => 'title',
+  4 => 'bread_crumb',
+  5 => 'bread_crumb_title',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010408s ] mysql:host=127.0.0.1;dbname=thins;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_rule` [ RunTime:0.017899s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tf_auth_rule` WHERE  `name` = 'Index/index' LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `ismenu` = 1  AND `module` = 'backend'  AND `status` = 1 ORDER BY `sorts` ASC,`id` ASC [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_group_access` [ RunTime:0.010743s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_group_access` `a` INNER JOIN `tf_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` IN (1,50,57,58,59,60,61,62,63,64,51,52,53,54,2,3,29,30,31,56,4,32,33,34,55,5,11,12,13,6,14,27,28,70,94,95,96,97,71,72,73,39,40,41,42,43,46,44,45,47,65,105,106,107,108,109,110,111,112,113,48,49,92,93,80,81,82,83,84,85,86,87,88,89,90,91,98,99,100,101,102,103,104,114,115,116)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000900s ]
+[ error ] [0]模板文件不存在:[E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\library\think\Template.php:1074]
+---------------------------------------------------------------
+[ 2018-04-25T19:34:23+08:00 ] 127.0.0.1 GET /
+[ info ] lq.com/ [运行时间：0.089074s][吞吐率：11.23req/s] [内存消耗：2,178.78kb] [文件加载：53]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\backend\behavior\Common @module_init [ RunTime:0.000453s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\kings\application\backend\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\view\index\index.html [ array (
+  0 => 'is_pjax',
+  1 => 'treeMenu',
+  2 => 'language',
+  3 => 'title',
+  4 => 'bread_crumb',
+  5 => 'bread_crumb_title',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009892s ] mysql:host=127.0.0.1;dbname=thins;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_rule` [ RunTime:0.018243s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tf_auth_rule` WHERE  `name` = 'Index/index' LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `ismenu` = 1  AND `module` = 'backend'  AND `status` = 1 ORDER BY `sorts` ASC,`id` ASC [ RunTime:0.000579s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_group_access` [ RunTime:0.010745s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_group_access` `a` INNER JOIN `tf_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` IN (1,50,57,58,59,60,61,62,63,64,51,52,53,54,2,3,29,30,31,56,4,32,33,34,55,5,11,12,13,6,14,27,28,70,94,95,96,97,71,72,73,39,40,41,42,43,46,44,45,47,65,105,106,107,108,109,110,111,112,113,48,49,92,93,80,81,82,83,84,85,86,87,88,89,90,91,98,99,100,101,102,103,104,114,115,116)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000778s ]
+[ error ] [0]模板文件不存在:[E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\library\think\Template.php:1074]
+---------------------------------------------------------------
+[ 2018-04-25T19:34:23+08:00 ] 127.0.0.1 GET /
+[ info ] lq.com/ [运行时间：0.077976s][吞吐率：12.82req/s] [内存消耗：2,178.78kb] [文件加载：53]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\backend\behavior\Common @module_init [ RunTime:0.000220s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\kings\application\backend\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\view\index\index.html [ array (
+  0 => 'is_pjax',
+  1 => 'treeMenu',
+  2 => 'language',
+  3 => 'title',
+  4 => 'bread_crumb',
+  5 => 'bread_crumb_title',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010598s ] mysql:host=127.0.0.1;dbname=thins;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_rule` [ RunTime:0.011499s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tf_auth_rule` WHERE  `name` = 'Index/index' LIMIT 1 [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `ismenu` = 1  AND `module` = 'backend'  AND `status` = 1 ORDER BY `sorts` ASC,`id` ASC [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_group_access` [ RunTime:0.010979s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_group_access` `a` INNER JOIN `tf_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` IN (1,50,57,58,59,60,61,62,63,64,51,52,53,54,2,3,29,30,31,56,4,32,33,34,55,5,11,12,13,6,14,27,28,70,94,95,96,97,71,72,73,39,40,41,42,43,46,44,45,47,65,105,106,107,108,109,110,111,112,113,48,49,92,93,80,81,82,83,84,85,86,87,88,89,90,91,98,99,100,101,102,103,104,114,115,116)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000880s ]
+[ error ] [0]模板文件不存在:[E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\library\think\Template.php:1074]
+---------------------------------------------------------------
+[ 2018-04-25T19:34:24+08:00 ] 127.0.0.1 GET /
+[ info ] lq.com/ [运行时间：0.106430s][吞吐率：9.40req/s] [内存消耗：2,178.78kb] [文件加载：53]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\backend\behavior\Common @module_init [ RunTime:0.000382s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\kings\application\backend\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\view\index\index.html [ array (
+  0 => 'is_pjax',
+  1 => 'treeMenu',
+  2 => 'language',
+  3 => 'title',
+  4 => 'bread_crumb',
+  5 => 'bread_crumb_title',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001064s ] mysql:host=127.0.0.1;dbname=thins;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_rule` [ RunTime:0.023076s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tf_auth_rule` WHERE  `name` = 'Index/index' LIMIT 1 [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `ismenu` = 1  AND `module` = 'backend'  AND `status` = 1 ORDER BY `sorts` ASC,`id` ASC [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_group_access` [ RunTime:0.015847s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_group_access` `a` INNER JOIN `tf_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` IN (1,50,57,58,59,60,61,62,63,64,51,52,53,54,2,3,29,30,31,56,4,32,33,34,55,5,11,12,13,6,14,27,28,70,94,95,96,97,71,72,73,39,40,41,42,43,46,44,45,47,65,105,106,107,108,109,110,111,112,113,48,49,92,93,80,81,82,83,84,85,86,87,88,89,90,91,98,99,100,101,102,103,104,114,115,116)  AND `type` = 1  AND `status` = 1 [ RunTime:0.001200s ]
+[ error ] [0]模板文件不存在:[E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\library\think\Template.php:1074]
+---------------------------------------------------------------
+[ 2018-04-25T19:34:44+08:00 ] 127.0.0.1 GET /
+[ info ] lq.com/ [运行时间：0.093613s][吞吐率：10.68req/s] [内存消耗：2,105.98kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\backend\behavior\Common @module_init [ RunTime:0.000364s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\kings\application\backend\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\view\index\index.html [ array (
+  0 => 'is_pjax',
+  1 => 'treeMenu',
+  2 => 'language',
+  3 => 'title',
+  4 => 'bread_crumb',
+  5 => 'bread_crumb_title',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000837s ] mysql:host=127.0.0.1;dbname=thins;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_rule` [ RunTime:0.015295s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tf_auth_rule` WHERE  `name` = 'Index/index' LIMIT 1 [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `ismenu` = 1  AND `module` = 'backend'  AND `status` = 1 ORDER BY `sorts` ASC,`id` ASC [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_group_access` [ RunTime:0.014391s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_group_access` `a` INNER JOIN `tf_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` IN (1,50,57,58,59,60,61,62,63,64,51,52,53,54,2,3,29,30,31,56,4,32,33,34,55,5,11,12,13,6,14,27,28,70,94,95,96,97,71,72,73,39,40,41,42,43,46,44,45,47,65,105,106,107,108,109,110,111,112,113,48,49,92,93,80,81,82,83,84,85,86,87,88,89,90,91,98,99,100,101,102,103,104,114,115,116)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000773s ]
+---------------------------------------------------------------
+[ 2018-04-25T19:34:45+08:00 ] 127.0.0.1 GET /
+[ info ] lq.com/ [运行时间：0.080622s][吞吐率：12.40req/s] [内存消耗：2,105.90kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\backend\behavior\Common @module_init [ RunTime:0.000658s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\kings\application\backend\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\view\index\index.html [ array (
+  0 => 'is_pjax',
+  1 => 'treeMenu',
+  2 => 'language',
+  3 => 'title',
+  4 => 'bread_crumb',
+  5 => 'bread_crumb_title',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009875s ] mysql:host=127.0.0.1;dbname=thins;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_rule` [ RunTime:0.019038s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tf_auth_rule` WHERE  `name` = 'Index/index' LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `ismenu` = 1  AND `module` = 'backend'  AND `status` = 1 ORDER BY `sorts` ASC,`id` ASC [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_group_access` [ RunTime:0.010803s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_group_access` `a` INNER JOIN `tf_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` IN (1,50,57,58,59,60,61,62,63,64,51,52,53,54,2,3,29,30,31,56,4,32,33,34,55,5,11,12,13,6,14,27,28,70,94,95,96,97,71,72,73,39,40,41,42,43,46,44,45,47,65,105,106,107,108,109,110,111,112,113,48,49,92,93,80,81,82,83,84,85,86,87,88,89,90,91,98,99,100,101,102,103,104,114,115,116)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000697s ]
+---------------------------------------------------------------
+[ 2018-04-25T19:34:56+08:00 ] 127.0.0.1 GET /
+[ info ] lq.com/ [运行时间：0.105282s][吞吐率：9.50req/s] [内存消耗：2,151.90kb] [文件加载：53]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\backend\behavior\Common @module_init [ RunTime:0.000557s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\kings\application\backend\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\view\index\index.html [ array (
+  0 => 'is_pjax',
+  1 => 'treeMenu',
+  2 => 'language',
+  3 => 'title',
+  4 => 'bread_crumb',
+  5 => 'bread_crumb_title',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001533s ] mysql:host=127.0.0.1;dbname=thins;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_rule` [ RunTime:0.021943s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tf_auth_rule` WHERE  `name` = 'Index/index' LIMIT 1 [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000961s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `ismenu` = 1  AND `module` = 'backend'  AND `status` = 1 ORDER BY `sorts` ASC,`id` ASC [ RunTime:0.000674s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_group_access` [ RunTime:0.011401s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_group_access` `a` INNER JOIN `tf_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` IN (1,50,57,58,59,60,61,62,63,64,51,52,53,54,2,3,29,30,31,56,4,32,33,34,55,5,11,12,13,6,14,27,28,70,94,95,96,97,71,72,73,39,40,41,42,43,46,44,45,47,65,105,106,107,108,109,110,111,112,113,48,49,92,93,80,81,82,83,84,85,86,87,88,89,90,91,98,99,100,101,102,103,104,114,115,116)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000751s ]
+[ error ] [0]模板文件不存在:[E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\library\think\Template.php:1074]
+---------------------------------------------------------------
+[ 2018-04-25T19:34:57+08:00 ] 127.0.0.1 GET /
+[ info ] lq.com/ [运行时间：0.100187s][吞吐率：9.98req/s] [内存消耗：2,151.91kb] [文件加载：53]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'dnt' => '1',
+  'cookie' => 'PHPSESSID=huv0p7kf81817gg17ji828utg7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'host' => 'lq.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\backend\behavior\Common @module_init [ RunTime:0.000420s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\backend\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\kings\application\backend\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\PHPTutorial\WWW\kings\public/../application/backend\view\index\index.html [ array (
+  0 => 'is_pjax',
+  1 => 'treeMenu',
+  2 => 'language',
+  3 => 'title',
+  4 => 'bread_crumb',
+  5 => 'bread_crumb_title',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009991s ] mysql:host=127.0.0.1;dbname=thins;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_rule` [ RunTime:0.019626s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tf_auth_rule` WHERE  `name` = 'Index/index' LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `ismenu` = 1  AND `module` = 'backend'  AND `status` = 1 ORDER BY `sorts` ASC,`id` ASC [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tf_auth_group_access` [ RunTime:0.011548s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_group_access` `a` INNER JOIN `tf_auth_group` `g` ON `a`.`group_id`=`g`.`id` WHERE  (  a.uid='1' and g.status='1' ) [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT * FROM `tf_auth_rule` WHERE  `id` IN (1,50,57,58,59,60,61,62,63,64,51,52,53,54,2,3,29,30,31,56,4,32,33,34,55,5,11,12,13,6,14,27,28,70,94,95,96,97,71,72,73,39,40,41,42,43,46,44,45,47,65,105,106,107,108,109,110,111,112,113,48,49,92,93,80,81,82,83,84,85,86,87,88,89,90,91,98,99,100,101,102,103,104,114,115,116)  AND `type` = 1  AND `status` = 1 [ RunTime:0.000620s ]
+[ error ] [0]模板文件不存在:[E:\phpStudy\PHPTutorial\WWW\kings\thinkphp\library\think\Template.php:1074]
