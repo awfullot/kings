@@ -51,7 +51,7 @@ class Admin extends Backend
     }
 
 
-    public function edit()
+    public function edit($id)
 
     {
 
@@ -59,7 +59,7 @@ class Admin extends Backend
 
             $data = input('post.');
 
-            $res = $this->AM->allowField(true)->save($data, $data['id']);
+            $res = $this->AM->validate(CONTROLLER_NAME . '.' . LQField())->allowField(true)->save($data, $data['id']);
 
             if ($res) {
 
@@ -72,9 +72,11 @@ class Admin extends Backend
             }
 
         } else {
-
-            return $this->fetch();
-
+            if ($id > 0){
+                $data = $this->AM->get($id);
+                $this->assign('data', $data);
+                return $this->fetch();
+            }
         }
 
     }
@@ -87,7 +89,7 @@ class Admin extends Backend
             Db::startTrans();
             try{
                 $data = input('post.');
-                $res = $this->AM->allowField(true)->save($data);
+                $res = $this->AM->validate(CONTROLLER_NAME.'.add')->allowField(true)->save($data);
                 if ($res){
                     Db::commit();
                     return LQPjax(LQ('Success'), url('index'));

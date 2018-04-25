@@ -14,35 +14,36 @@
                     </div>
                 </div>
                 <div class="ibox-content">
+                    <input type="hidden" name="id" value="{$data.id}" />
                         <div class="form-group">
                             <label class="col-sm-2 control-label">{:LQ('System Name')}</label>
                             <div class="col-sm-8">
-                                <input type="text" name="username" class="form-control"></div>
+                                <input type="text" name="username" class="form-control" value="{$data.username}"></div>
                         </div>
                         <div class="hr-line-dashed"></div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">{:LQ('Name')}</label>
                             <div class="col-sm-8">
-                                <input type="text" name="name" class="form-control">
+                                <input type="text" name="name" class="form-control" value="{$data.name}">
                             </div>
                         </div>
                         <div class="hr-line-dashed"></div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">{:LQ('Password')}</label>
                             <div class="col-sm-8">
-                                <input type="password" class="form-control" name="password"></div>
+                                <input type="password" class="form-control" name="password" value="{$data.password}"></div>
                         </div>
                         <div class="hr-line-dashed"></div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">{:LQ('Email')}</label>
                             <div class="col-sm-8">
-                                <input type="email" name="email" class="form-control"></div>
+                                <input type="email" name="email" class="form-control" value="{$data.email}"></div>
                         </div>
                         <div class="hr-line-dashed"></div>
                         <div class="form-group">
                             <label class="col-lg-2 control-label">{:LQ('Phone')}</label>
                             <div class="col-lg-8">
-                                <input type="text" name="moblie" class="form-control"></div>
+                                <input type="text" name="moblie" class="form-control" value="{$data.moblie}"></div>
                         </div>
                         <div class="hr-line-dashed"></div>
                         <div class="form-group">
@@ -68,17 +69,17 @@
                         <label class="col-sm-2 control-label">{:LQ('Sex')}</label>
                         <div class="col-sm-10">
                             <select class="form-control m-b" name="sex">
-                                <option>{:LQ('Boy')}</option>
-                                <option>{:LQ('Girl')}</option>
+                                <option value="0" {if $data.sex eq 0}selected{/if}>{:LQ('Girl')}</option>
+                                <option value="1" {if $data.sex eq 1}selected{/if}>{:LQ('Boy')}</option>
                             </select>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-2 control-label">{:LQ('Status')}</label>
                         <div class="col-sm-10">
-                            <select class="form-control m-b" name="sex">
-                                <option>{:LQ('Normal')}</option>
-                                <option>{:LQ('Disable')}</option>
+                            <select class="form-control m-b" name="status">
+                                <option value="0" {if $data.status eq 0}selected{/if}>{:LQ('Disable')}</option>
+                                <option value="1" {if $data.status eq 1}selected{/if}>{:LQ('Normal')}</option>
                             </select>
                         </div>
                     </div>

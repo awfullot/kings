@@ -105,3 +105,20 @@ function paging(){
     $res['query'] = $param;
     return $res;
 }
+
+/**
+ * 用于状态判断请求同一个修改接口
+ * @param string $arr
+ * @return int|string
+ */
+function LQField(){
+    $data = input('post.');
+    if(isset($data) && count($data) == 2){
+        foreach ($data as $k =>$v){
+            $field = $k != 'id' ? $k : '';
+        }
+    }else{
+        $field = 'edit';
+    }
+    return $field;
+}
