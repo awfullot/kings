@@ -16,6 +16,7 @@ class Admin extends Backend
 
 {
 
+    private $MD = 'admin';
     private $AM;   //当前控制器关联模型
 
 
@@ -59,6 +60,10 @@ class Admin extends Backend
 
             $data = input('post.');
 
+            if(count($data) > 2){
+                $data['password'] = md5($data['password']);
+            }
+
             $res = $this->AM->validate(CONTROLLER_NAME . '.' . LQField())->allowField(true)->save($data, $data['id']);
 
             if ($res) {
@@ -89,6 +94,9 @@ class Admin extends Backend
             Db::startTrans();
             try{
                 $data = input('post.');
+                if(count($data) > 2){
+                    $data['password'] = md5($data['password']);
+                }
                 $res = $this->AM->validate(CONTROLLER_NAME.'.add')->allowField(true)->save($data);
                 if ($res){
                     Db::commit();
@@ -101,6 +109,7 @@ class Admin extends Backend
                 return LQPjax($e->getMessage());
             }
         }else{
+            $this->assign('data', LQEModel($this->MD));
             return $this->fetch('edit');
         }
 

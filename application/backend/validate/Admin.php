@@ -12,6 +12,7 @@ class Admin extends Validate
 {
     protected $rule = [
         'username' => 'require|min:1|unique:admin',
+        'name' => 'require',
         'password' => 'require|min:6',
         'email' => 'email|unique:admin',
         'moblie' => '/^1[34578]\d{9}$/|unique:admin',
@@ -21,6 +22,7 @@ class Admin extends Validate
 
     protected $message = [
         'username.require' => '{%Username Require}',
+        'name.require' => '{%Name Require}',
         'username.min' => '{%Username Min}',
         'username.unique' => '{%Username Unique}',
         'password' => '{%Password Val}',
@@ -33,8 +35,8 @@ class Admin extends Validate
         'status' => '{%Status Val}',
     ];
     protected $scene = [
-        'add'   => ['username', 'password', 'email', 'moblie', 'sex', 'status'],
-        'edit'  => ['email', 'moblie', 'sex', 'status'],
+        'add'   => ['username', 'name', 'password', 'email', 'moblie', 'sex', 'status'],
+        'edit'   => ['username', 'name', 'password', 'email', 'moblie', 'sex', 'status'],
         'status' => ['status'],
     ];
 }

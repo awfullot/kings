@@ -1,4 +1,5 @@
 <?php
+use think\Db;
 /**
  * 权限节点判断
  * @param $rule
@@ -121,4 +122,18 @@ function LQField(){
         $field = 'edit';
     }
     return $field;
+}
+/**
+ * 获取空模型
+ */
+function LQEModel($tables){
+    $rs =  Db::query('show columns FROM `'.config('database.prefix').$tables."`");
+    $obj = [];
+    if($rs){
+        foreach($rs as $key => $v) {
+            $obj[$v['Field']] = $v['Default'];
+            if($v['Key'] == 'PRI')$obj[$v['Field']] = 0;
+        }
+    }
+    return $obj;
 }

@@ -7,6 +7,7 @@ return [
 
     //数据验证提示
     'Username Require'      => '用户名不能为空',
+    'Name Require'          => '姓名不能为空',
     'Username Min'          => '用户名长度不能少于1位',
     'Username Unique'       => '用户名已经存在，请重新填写',
     'Password Val'          => '密码不能为空',

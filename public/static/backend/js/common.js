@@ -28,7 +28,7 @@ $(function() {
                             })
                         } else {
                             _this.button('reset');
-                            toastr.success(data.info);
+                            toastr.error(data.info);
                         }
                     }
                 }
