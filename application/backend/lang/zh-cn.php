@@ -6,6 +6,7 @@ return [
     'Admin' => '管理员列表',
     'Delete' => '删除',
     'Edit' => '编辑',
+    'Index' => '列表',
     'Create' => '添加',
     'English' => '英文',
     'Chinese' => '中文',

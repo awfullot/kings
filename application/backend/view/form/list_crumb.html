@@ -1,0 +1,20 @@
+<div class="row wrapper border-bottom white-bg page-heading row_mb">
+    <div class="col-lg-10">
+        <h2>{:LQ($bread_crumb_title)}</h2>
+        <ol class="breadcrumb">
+            {volist name="bread_crumb" id="v"}
+                <li {if $v.title eq $bread_crumb_title}class="active"{/if}>
+                    <a href="">
+                        {if $v.title eq $bread_crumb_title}
+                            <strong>{:LQ($v.title)}</strong>
+                        {else}
+                            {:LQ($v.title)}
+                        {/if}
+                    </a>
+                </li>
+            {/volist}
+        </ol>
+    </div>
+    <div class="col-lg-2">
+    </div>
+</div>

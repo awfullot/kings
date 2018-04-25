@@ -27,12 +27,17 @@ class Backend extends Controller
         // 加载当前控制器语言包
         Lang::load(APP_PATH . MODULE_NAME . '/lang/' . BACKEND_LANG . '/' . str_replace('.', '/', strtolower(CONTROLLER_NAME)) . '.php');
 
+        // 面包屑导航
+        $path = str_replace('.', '/', CONTROLLER_NAME) . '/' . ACTION_NAME;
+        $bread_crumb = $this->get_tree((new AuthRule())->where('name', $path)->value('id'));
         // 渲染
         $this->assign([
             'is_pjax' => IS_PJAX,
             'treeMenu' => $this->treeMenu(),
             'language' => BACKEND_LANG,
-            'title' => LQ('Home')
+            'title' => LQ('Home'),
+            'bread_crumb' => $bread_crumb,
+            'bread_crumb_title' => ucfirst(ACTION_NAME)
         ]);
 
         //是否开启浏览模式
@@ -89,6 +94,21 @@ class Backend extends Controller
             }else{
                 $this->redirect('login/index');
             }
+        }
+    }
+
+    /**
+     * 获取面包屑导航
+     * @param string $id
+     * @return array
+     */
+    public function get_tree($id = ''){
+        static $tree = [];
+        $info = (new AuthRule())->where('id', $id)->find();
+        $tree[] = $info;
+        if($info['pid'] > 0){
+            $this->get_tree($info['pid']);
+            return array_reverse($tree);
         }
     }
 }
