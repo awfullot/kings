@@ -1,0 +1,141 @@
+{extend name="common/backend_base" /}
+
+{block name="pjax_container"}
+<div class="row wrapper border-bottom white-bg page-heading row_mb">
+
+        <div class="col-lg-10">
+
+            <h2>Loading buttons</h2>
+
+            <ol class="breadcrumb">
+
+                <li>
+
+                    <a href="index.html">Home</a>
+
+                </li>
+
+                <li>
+
+                    <a>Miscellaneous</a>
+
+                </li>
+
+                <li class="active">
+
+                    <strong>Loading buttons</strong>
+
+                </li>
+
+            </ol>
+
+        </div>
+
+        <div class="col-lg-2">
+
+
+
+        </div>
+
+    </div>
+            <div class="row row_content">
+<div class="col-lg-12">
+
+    <div class="ibox float-e-margins">
+
+        <!--<div class="ibox-title">-->
+
+            <!--<h5>Custom responsive table </h5>-->
+
+        <!--</div>-->
+
+        <div class="ibox-content">
+
+            <div class="row">
+
+                {include file="form/form_action" /}
+
+                {include file="form/form_search" /}
+
+            </div>
+
+            <div class="table-responsive">
+
+                <table class="table">
+
+                    <thead>
+
+                    <tr>
+
+                        <th></th>
+
+                        <th>{:LQ('System Name')}</th>
+
+                        <th>{:LQ('Name')}</th>
+
+                        <th>{:LQ('System Role')}</th>
+
+                        <th>{:LQ('Email')}</th>
+
+                        <th>{:LQ('Phone')}</th>
+
+                        <th>{:LQ('Login Num')}</th>
+
+                        <th>{:LQ('Status')}</th>
+
+                        <th>{:LQ('Operate')}</th>
+
+                    </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                    {volist name="dataList" id="v"}
+
+                    <tr>
+
+                        <td><input type="checkbox" class="i-checks" name="input[]" value="{$v.id}"></td>
+
+                        <td>{$v.username}</td>
+
+                        <td>{$v.name}</td>
+
+                        <td style="vertical-align:middle"><span class="label label-primary">超级管理员</span></td>
+
+                        <td>{$v.email}</td>
+
+                        <td>{$v.moblie}</td>
+
+                        <td>{$v.logins}</td>
+
+                        <td><a title="{:LQ('Edit')}" class="{if $v.status eq 1}text-navy{else /}text-danger{/if} switch_to" data-id="{$v.id}" data-field="status"
+
+                               data-value="{$v.status}" data-url="{:url('edit', 'id='.$v['id'])}">{if $v.status eq 1}Y{else}N{/if}</a></td>
+
+                        <td>{include file="form/list_action" /}</td>
+
+                    </tr>
+
+                    {/volist}
+
+                    </tbody>
+
+                </table>
+
+                <div class="pager-style">
+
+                    {$dataList->render()}
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</div>
+
+{/block}

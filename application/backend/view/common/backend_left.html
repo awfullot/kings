@@ -1,0 +1,49 @@
+{if !$is_pjax}
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <!--左侧用户信息-->
+                <li class="nav-header">
+                    <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="__IMG__/profile_small.jpg" />
+                             </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">David Williams</strong>
+                             </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                            <li><a href="mailbox.html">Mailbox</a></li>
+                            <li class="divider"></li>
+                            <li><a href="login.html">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+                <!--左侧菜单栏-->
+
+                {volist name="treeMenu" id="oo"}
+                {if condition=" $oo.level eq '1' && $oo.name eq 'Index/index' "}
+                <li>
+                    <!--fa fa-th-large-->
+                    <a href="{:url(MODULE_NAME.'/'.$oo.name)}"><i class="{$oo.icon}"></i> <span class="nav-label">{:LQ($oo.title)}</span></a>
+                </li>
+                {elseif condition=" $oo.level eq '1' "/}
+                <li>
+                    <a href="{:url(MODULE_NAME.'/'.$oo.name)}"><i class="{$oo.icon}"></i> <span class="nav-label">{:LQ($oo.title)}</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        {volist name="treeMenu" id="to"}
+                        {if condition=" $to.pid eq $oo.id "}
+                        <li><a href="{:url(MODULE_NAME.'/'.$to.name)}">{:LQ($to.title)}</a></li>
+                        {/if}
+                        {/volist}
+                    </ul>
+                </li>
+                {/if}
+                {/volist}
+            </ul>
+        </div>
+    </nav>
+{/if}

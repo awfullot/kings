@@ -1,0 +1,11 @@
+<div class="col-sm-2">
+    <form action="{:search_url('search')}" method="GET" pjax-search="">
+        <div class="input-group">
+            <input class="form-control" placeholder="{:LQ('Search FAQ')}" value="{:input('get.search')}" name="search" type="text">
+            <span class="input-group-btn">
+                <button type="submit" class="btn btn-primary">{:LQ('Search')}</button>
+            </span>
+        </div>
+    </form>
+</div>
+
